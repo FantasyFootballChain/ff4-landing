@@ -1,0 +1,61 @@
+body {
+	background: #2286b7;
+}
+
+/* Helpers */ 
+.white-link, .white-link:visited {
+	color: #fff;
+}
+
+/* Header */
+.header .logo-text {
+	color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+/* Main */
+.main .block-store {
+	border-right: 5px dotted #fff;
+}
+
+.main .block-how-to {
+	color: #fff;
+}
+
+/* Footer */
+.footer {
+	color: #fff;
+}
+
+@media (max-width: 768px) {
+	.header .logo-image-container {
+		padding-right: 15px !important;
+	}
+
+	.header .logo-text-container {
+		padding-left: 15px !important;
+		font-size: 0.95rem;
+		text-align: center;
+	}
+
+	.header .social-buttons-container {
+		text-align: center !important;
+	}
+
+	.main .logo-in-phone-container {
+		padding-top: 1rem;
+	}
+
+	.main .block-store {
+		border-right: none;
+	}
+
+	.main .block-how-to {
+		padding-top: 1rem;
+	}
+
+	.footer {
+		margin-top: 1rem !important;
+	}
+}
