@@ -7,6 +7,8 @@
 		<link rel="shortcut icon" href="favicon.ico">
 		<title>Fantasy Football Chain</title>
 
+		<link href="libs/lightbox2-master/dist/css/lightbox.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		<link rel="stylesheet" href="social-buttons-style.css">
@@ -71,32 +73,64 @@
 			</div>
 			<!-- main -->
 			<div class="row main">
-				<div class="col-md-6 block-store">
+				<div class="col-md-4 offset-md-2 block-store">
 					<div class="row ">
-						<div class="col-md-8 logo-in-phone-container">
-							<img src="images/logo_in_iphone.png" class="img-fluid" alt="">
-						</div>
-						<div class="col-md-4 align-self-center">
-							<div class="mt-3">
-								<img src="images/google_play_icon.png" class="img-fluid" alt="">
-							</div>
-							<div class="mt-3">
-								<img src="images/appstore_icon.png" class="img-fluid" alt="">
-							</div>
-							<div class="mt-3">
-								<img src="images/webapp_icon.png" class="img-fluid" alt="">
+						<div class="col-md-12 logo-in-phone-container">
+							<div class="mobile-slider">
+								<div><img src="images/slides/iphone1.png" class="img-fluid" alt=""></div>
+								<div><img src="images/slides/iphone2.png" class="img-fluid" alt=""></div>
+								<div><img src="images/slides/iphone3.png" class="img-fluid" alt=""></div>
+								<div><img src="images/slides/iphone4.png" class="img-fluid" alt=""></div>
+								<div><img src="images/slides/iphone5.png" class="img-fluid" alt=""></div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 block-how-to">
+				<div class="col-md-6 download-links align-self-center">
+					<div class="mt-3">
+						<a href="//web.ff4.app" target="_blank">
+							<img src="images/webapp_icon.png" class="img-fluid" alt="">
+						</a>
+					</div>
+					<div class="mt-3">
+						<img src="images/google_play_icon.png" class="img-fluid" alt="" data-tippy="In progress...">
+					</div>
+					<div class="mt-3">
+						<img src="images/appstore_icon.png" class="img-fluid" alt="" data-tippy="In progress...">
+					</div>
+				</div>
+			</div>
+			<!-- how it works -->
+			<div class="row how-it-works mt-5 mb-4">
+				<div class="col-12 text-center">
 					<h2><i class="fas fa-question-circle"></i> How it works</h2>
-					<h4><i class="fas fa-users"></i> Step 1. Create a squad</h4>
-					<p>Create a virtual team of football players that you think will receive performance points for scored goals, assists or clean sheats in the next round of the selected league.</p>
-					<h4><i class="fab fa-ethereum"></i> Step 2. Stake some money</h4>
-					<p>Fund your squad with ether cryptocurrency that you want to put at stake.</p>
-					<h4><i class="fas fa-child"></i> Step 3. Double your stake</h4>
-					<p>If your team manages to outperform 50% of other teams then you double your stake. You will get back your doubled stake from Fantasy Football Chain smart contract which resides in Ethereum network.</p>
+				</div>
+				<div class="col-md-4 mt-3">
+					<div>
+						<h4><i class="fas fa-users"></i> Step 1. Select a league</h4>
+						<p>Select one of the available weekly leagues.</p>
+						<a href="images/screenshots/screen1.png" data-lightbox="screen1" data-title="Step 1. Select a league">
+							<img src="images/screenshots/screen1.png" class="img-fluid screenshot-border" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 mt-3">
+					<div>
+						<h4><i class="fab fa-ethereum"></i> Step 2. Create a squad and stake some money</h4>
+						<p>Create a virtual team of football players that you think will receive performance points for scored goals, assists or clean sheats in the next round of the selected league. Fund your squad with ether cryptocurrency that you want to put at stake.</p>
+						<a href="images/screenshots/screen2.png" data-lightbox="screen2" data-title="Step 2. Create a squad and stake some money">
+							<img src="images/screenshots/screen2.png" class="img-fluid screenshot-border" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 mt-3">
+					<div>
+						<h4><i class="fas fa-users"></i> Step 3. Double your stake</h4>
+						<p>If your team manages to outperform 50% of other teams then you double your stake. You will get back your doubled stake from Fantasy Football Chain smart contract which resides in Ethereum network.</p>
+						<a href="images/screenshots/screen3.png" data-lightbox="screen3" data-title="Step 3. Double your stake">
+							<img src="images/screenshots/screen3.png" class="img-fluid screenshot-border" alt="">
+						</a>
+					</div>
 				</div>
 			</div>
 			<!-- footer -->
@@ -107,6 +141,15 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Custom JS -->
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="https://unpkg.com/tippy.js@3/dist/tippy.all.min.js"></script>
+		<script src="libs/lightbox2-master/dist/js/lightbox.min.js"></script>
+		<script type="text/javascript" src="my.js"></script>
+
 	</body>
 
 </html>

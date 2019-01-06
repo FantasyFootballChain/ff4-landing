@@ -19,8 +19,23 @@ body {
 	border-right: 5px dotted #fff;
 }
 
-.main .block-how-to {
+/* Download links */
+.download-links img {
+	max-width: 300px;
+}
+
+/* How it works */
+.screenshot-border {
+	border: 3px solid black;
+    border-radius: 10px;
+}
+
+.how-it-works {
 	color: #fff;
+}
+
+.how-it-works p {
+	min-height: 75px;
 }
 
 /* Footer */
@@ -49,6 +64,10 @@ body {
 
 	.main .block-store {
 		border-right: none;
+	}
+
+	.main .download-links {
+		text-align: center;
 	}
 
 	.main .block-how-to {
